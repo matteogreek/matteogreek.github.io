@@ -73,11 +73,11 @@ for GNU/Linux 3.2.0, stripped
 ```
 
 We found some hex strings, lets decode them using *xxd*:
-
-echo 0x6667243532404032 | xxd -r\
-echo 0x40265473 | xxd -r\
+```
+echo 0x6667243532404032 | xxd -r
+echo 0x40265473 | xxd -r
 echo 0x4c | xxd -r
-
+```
 local_1e = 0x6667243532404032; -> fg$52@@2\
 local_16 = 0x40265473; -> @&Ts\
 local_12 = 0x4c; ->  L
@@ -89,11 +89,11 @@ concatenate them and try the resulting string as input for the password.
 ![try1](https://user-images.githubusercontent.com/70201797/166164363-b1d60e03-e187-4707-aa20-52f152000e16.png)
 
 Let's reverse the hex strings to follow the little-endian format and try again. 
-
-echo 0x6667243532404032 | xxd -r | rev\
-echo 0x40265473 | xxd -r | rev\
-echo 0x4c | xxd -r | rev\
-
+```
+echo 0x6667243532404032 | xxd -r | rev
+echo 0x40265473 | xxd -r | rev
+echo 0x4c | xxd -r | rev
+```
 **2@@25$gfsT&@L**
 
 ![try2](https://user-images.githubusercontent.com/70201797/166164391-0a17a6f0-ccf9-4ecd-8fe2-d77fd71628b4.png)
