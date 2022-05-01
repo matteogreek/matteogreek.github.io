@@ -6,4 +6,4 @@
 ## **Tryhackme Writeups**
 
 
-- [0x41haz](https://matteogreek.github.io/posts/thm/0x41haz.html)
+- [0x41haz](https://matteogreek.github.io/posts/thm/0x41haz_writeup.html)
