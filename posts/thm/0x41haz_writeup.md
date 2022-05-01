@@ -100,4 +100,4 @@ echo 0x4c | xxd -r | rev\
 
 **Hurray!**
 
-![Heartstone back to home](https://matteogreek.github.io)
+[Heartstone back to home](https://matteogreek.github.io)
