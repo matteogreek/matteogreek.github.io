@@ -99,4 +99,4 @@ The last question is what removable drive was KAPE copied from. As before we can
 
 **Hurray!**
 
-[Heartstone back to home](http://mainpage.github.io "homepage")
+[Heartstone back to home](https://matteogreek.github.io/)
