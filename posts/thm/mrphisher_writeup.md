@@ -7,7 +7,7 @@ Deploy the machine attached to the room to access the files.
 The task of the room says that the document attached to a suspicious email keeps asking to enable macros.
 We can use this information as a guide for starting the research of the flag. We can deduce that some kind of useful information is related to the document's macros.
 
-First of all let's open the file called *MrPhisher.docm* with LibreOffice. Then to see what macros are set for the document go to *Tools > Macros > Edit Macros* .
+First of all let's open the file called *MrPhisher.docm* with LibreOffice. Then to see what macros are set for the document go to *Tools > Macros > Edit Macros*.
 Under *Modules* we can see *NewMacro*, if we open it we see the macro related of MrPhisher.doc.
 
 ![macro](https://user-images.githubusercontent.com/70201797/180665401-31f055cb-5f80-4056-a9d9-a3e45ce1e1a9.png)
