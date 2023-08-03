@@ -32,12 +32,12 @@ external_link: ''
 Welcome to my personal page! Here, you will find a collection of in-depth writeups  for various cybersecurity challenges from both TryHackMe rooms and HackTheBox CTF machines.
 
 ## TryHackMe Writeups 
-- [0x41haz](./writeups/thm/0x41haz_writeup.md)
-- [KAPE](./writeups/thm/kape_writeup.md)
-- [OhSINT](./writeups/thm/OhSINT_writeup.md)
-- [Committed](./writeups/thm/committed_writeup.md)
-- [Mr. Phisher](./writeups/thm/mrphisher_writeup.md)
-- [A project]({{< relref "/project/ctfs/writeups/thm/0x41haz_writeup.md" >}})
+- [0x41haz](./writeups/0x41haz_writeup.md)
+- [KAPE](./writeups/kape_writeup.md)
+- [OhSINT](./writeups/OhSINT_writeup.md)
+- [Committed](./writeups/committed_writeup.md)
+- [Mr. Phisher](./writeups/mrphisher_writeup.md)
+- [A project]({{< relref "/project/ctfs/writeups/0x41haz_writeup.md" >}})
 
 ## HackTheBox
 Coming Soon...
