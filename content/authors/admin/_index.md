@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: MSc student in  Cyber Security
+role: MSc student in Cyber Security
 
 # Organizations/Affiliations to show in About widget
 organizations:

@@ -9,25 +9,25 @@ appearance:
   theme_day: minimal
   theme_night: minimal
   font: minimal
-  font_size: M
+  font_size: S
 
 # SEO
 
-marketing:
-  seo:
-    site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
-  analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''  
-  verification:
-    google: ''
-    baidu: ''
+#marketing:
+#  seo:
+#    site_type: Person
+#    local_business_type: ''
+#    org_name: ''
+#    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
+#    twitter: 'wowchemy'
+#  analytics:
+#    google_analytics: ''
+#    baidu_tongji: ''
+#    google_tag_manager: ''
+#    microsoft_clarity: ''  
+#  verification:
+#    google: ''
+#    baidu: ''
 
 # Site header
 
@@ -70,7 +70,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/matteogreek/matteogreek.githhub.io'
     content_dir: content
     branch: main
   avatar:
