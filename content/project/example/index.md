@@ -28,4 +28,4 @@ external_link: 'https://github.com/sap/project-kb'
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 #slides: ''
-
+---
