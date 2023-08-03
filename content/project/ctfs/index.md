@@ -37,6 +37,7 @@ Welcome to my personal page! Here, you will find a collection of in-depth writeu
 - [OhSINT](./writeups/thm/OhSINT_writeup.md)
 - [Committed](./writeups/thm/committed_writeup.md)
 - [Mr. Phisher](./writeups/thm/mrphisher_writeup.md)
+- [A project]({{< relref "/project/ctfs/writeups/thm/0x41haz_writeup.md" >}})
 
 ## HackTheBox
 Coming Soon...
