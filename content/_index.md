@@ -38,7 +38,7 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: About me
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   #- block: features
@@ -76,6 +76,14 @@ sections:
           location: SAP Labs France - Mougins, Provence-Alpes-Côte d'Azur, France
           date_start: '2023-02-20'
           date_end: '2023-07-28'
+          description: Automated Mining of Vulnerabilities - Software Repositories
+        - title: Erasmus+ Internship
+          company: Białystok Science and Technology Park
+          company_url: 'https://bpnt.bialystok.pl/en/'
+          company_logo: biali
+          location: Białystok, Poland
+          date_start: '2017-05-20'
+          date_end: '2017-07-28'
           description: Automated Mining of Vulnerabilities - Software Repositories
       columns: '2'
   #- block: accomplishments
@@ -171,7 +179,7 @@ sections:
           tag: Others
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
+      columns: '2'
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false

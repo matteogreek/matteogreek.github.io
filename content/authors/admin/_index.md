@@ -27,16 +27,16 @@ bio:
 # Interests to show in About widget
 interests:
   - Software Vulnerabilities 
-  - SDN & NFV
+  - Software-defined networking
   - Mining repositories
 
 # Education to show in About widget
 education:
   courses:
-    - course: Master's Degree in Computer Science - Cyber Security
+    - course: M.Sc Computer Science - Cyber Security
       institution: University of Trento
       year: 2023
-    - course: Bachelor's Degree in Information Engineering - Business Organization
+    - course: B.Sc Information Engineering - Business Organization
       institution: University of Trento
       year: 2022
     - course: High School Diploma in Computer Science
@@ -79,5 +79,5 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-
+TODO
 {style="text-align: justify;"}
