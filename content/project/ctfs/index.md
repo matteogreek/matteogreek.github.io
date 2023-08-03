@@ -36,4 +36,4 @@ external_link: ''
 - [OhSINT](writeups/thm/OhSINT_writeup)
 - [Committed](writeups/thm/committed_writeup)
 - [Mr. Phisher](writeups/thm/mrphisher_writeup)
-- [test]({{< relref "/writeups/thm/0x41haz_writeup" >}})
+- [test]({{< relref "/writeups/thm/0x41haz_writeup.md" >}})
