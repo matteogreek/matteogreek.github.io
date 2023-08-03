@@ -58,9 +58,10 @@ sections:
   #        icon: camera-retro
   #        icon_pack: fas
   - block: experience
+    id: experience
     content:
       title: Experience
-      id: experience
+      
       # Date format for experience
       #   Refer to https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
