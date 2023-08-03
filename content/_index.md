@@ -72,7 +72,7 @@ sections:
         - title: Security Research Intern
           company: SAP
           company_url: 'https://www.sap.com/'
-          company_logo: sap-logo-svg.svg
+          company_logo: sap-logo-svg
           location: SAP Labs France - Mougins, Provence-Alpes-Côte d'Azur, France
           date_start: '2023-02-20'
           date_end: '2023-07-28'
