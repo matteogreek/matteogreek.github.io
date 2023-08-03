@@ -30,3 +30,9 @@ external_link: ''
 #slides: ''
 ---
 
+# TryHackMe Writeups 
+- [0x41haz](writeups/thm/0x41haz_writeup.md)
+- [KAPE](writeups/thm/kape_writeup.html)
+- [OhSINT](writeups/thm/OhSINT_writeup.html)
+- [Committed](writeups/thm/committed_writeup.html)
+- [Mr. Phisher](writeups/thm/mrphisher_writeup.html)
