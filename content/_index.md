@@ -60,6 +60,7 @@ sections:
   - block: experience
     content:
       title: Experience
+      id: experience
       # Date format for experience
       #   Refer to https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
@@ -179,8 +180,8 @@ sections:
       #    tag: Others
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
-      #view: showcase
+      columns: '2'
+      view: compact
       # For Showcase view, flip alternate rows?
       #flip_alt_rows: false
   #- block: markdown
