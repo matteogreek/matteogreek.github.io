@@ -84,7 +84,8 @@ sections:
           location: Białystok, Poland
           date_start: '2017-05-20'
           date_end: '2017-07-28'
-          description: Automated Mining of Vulnerabilities - Software Repositories
+          description: 
+    design:
       columns: '2'
   #- block: accomplishments
   #  content:
@@ -180,9 +181,9 @@ sections:
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2'
-      view: showcase
+      #view: showcase
       # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
+      #flip_alt_rows: false
   #- block: markdown
   #  content:
   #    title: Gallery
