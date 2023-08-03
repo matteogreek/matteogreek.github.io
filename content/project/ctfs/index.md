@@ -1,12 +1,12 @@
 ---
-title: Prospector
-summary: Tool to find security fixes for known vulnerabilities in open source software repositories
+title: CTFs Writeups
+summary: TryHackMe and HackTheBox Writeups
 tags:
-  - Mining
+  - CTFs
 #date: ''
 
 # Optional external URL for project (replaces project detail page).
-external_link: 'https://github.com/sap/project-kb'
+external_link: ''
 
 #image:
 #  caption: Photo by rawpixel on Unsplash
@@ -28,4 +28,5 @@ external_link: 'https://github.com/sap/project-kb'
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 #slides: ''
+---
 
