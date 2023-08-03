@@ -1,7 +1,7 @@
 ---
 title: CTFs Writeups
 summary: TryHackMe and HackTheBox Writeups
-tags:
+tags: CTFs
 #date: ''
 
 # Optional external URL for project (replaces project detail page).
