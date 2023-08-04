@@ -1,7 +1,8 @@
 ---
 title: Committed
 summary: sensitive information in public repository
-
+tags:
+  - writeup
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''

@@ -1,7 +1,8 @@
 ---
 title: OhSINT
 summary: Open Source Intelligence simple task
-
+tags:
+  - writeup
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''

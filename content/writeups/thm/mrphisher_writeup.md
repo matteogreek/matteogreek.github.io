@@ -1,7 +1,8 @@
 ---
 title: Mr. Phisher
 summary: Phishing email containing suspicious attachment
-
+tags:
+  - writeup
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''

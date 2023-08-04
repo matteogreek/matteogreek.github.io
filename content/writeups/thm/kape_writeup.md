@@ -1,7 +1,8 @@
 ---
 title: KAPE
 summary: tool that parses and extracts Windows forensics artifacts
-
+tags:
+  - writeup
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''

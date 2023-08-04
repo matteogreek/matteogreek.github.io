@@ -1,7 +1,8 @@
 ---
 title: 0x41haz
 summary: Simple Reversing Challenge
-
+tags:
+  - writeup
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 
