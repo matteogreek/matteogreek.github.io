@@ -3,7 +3,7 @@ title: CTFs Writeups
 summary: list of writeups of THM and HTB boxes
 tags:
   - CTFs
-#date: ''
+date: ""
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
