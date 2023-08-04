@@ -1,9 +1,7 @@
 ---
 title: OhSINT
 summary: Open Source Intelligence simple task
-tags:
-  - CTF
-date: ''
+
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
