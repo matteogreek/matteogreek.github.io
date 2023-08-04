@@ -124,7 +124,7 @@ sections:
         - project
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
       default_button_index: 0
-      date_format: Jan 2006
+      #date_format: Jan 2006
       # Filter toolbar (optional).
       # Add or remove as many filters (`filter_button` instances) as you like.
       # To show all items, set `tag` to "*".
