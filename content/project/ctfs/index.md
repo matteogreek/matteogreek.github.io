@@ -1,0 +1,35 @@
+---
+title: CTFs Writeups
+summary: list of writeups of THM and HTB boxes
+tags:
+  - CTF
+#date: ''
+
+# Optional external URL for project (replaces project detail page).
+external_link: ''
+
+#image:
+#  caption: Photo by rawpixel on Unsplash
+#  focal_point: Smart
+
+#links:
+#  - icon: twitter
+#    icon_pack: fab
+#    name: Follow
+#    url: https://twitter.com/georgecushen
+#url_code: ''
+#url_pdf: ''
+#url_slides: ''
+#url_video: ''
+
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+#slides: ''
+---
+Welcome to my personal page dedicated to CTFs! Here, you will find a collection of in-depth writeups for various cybersecurity challenges from both TryHackMe rooms and HackTheBox CTF boxes.
+
+## TryHackMe
+
