@@ -121,12 +121,7 @@ sections:
     content:
       title: Projects
       folders:
-        - A-star
-        - autonet
-        - comnetsemu
-        - ctfs
-        - prospector
-        - sdn
+        - project
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
       default_button_index: 0
       sort_ascending: false
@@ -137,17 +132,17 @@ sections:
       # To show all items, set `tag` to "*".
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Networking
-          tag: Networking
-        - name: Mining repos
-          tag: Mining
-        - name: CTFs Writeups
-          tag: CTFs
-        - name: Others
-          tag: Others
+      #buttons:
+      #  - name: All
+      #    tag: '*'
+      #  - name: Networking
+      #    tag: Networking
+      #  - name: Mining repos
+      #    tag: Mining
+      #  - name: CTFs Writeups
+      #    tag: CTFs
+      #  - name: Others
+      #    tag: Others
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2'
