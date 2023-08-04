@@ -81,11 +81,21 @@ highlight_name: true
 ---
 
 Greetings! I am a Master’s Degree student in Computer Science, specializing in Cyber Security at the University of Trento. I am an inquisitive
-person, eager to learn new skills and always seeking new topics to explore. I recently completed an internship at SAP Security Research, where I contributed to the devolpment of an automated tool for mining vulnerabilities in open source software repositories. Currently, I am working on my Master's thesis, focusing on the same topic that I explored during my internship. 
+person, eager to learn new skills and always seeking new topics to explore. I recently completed an internship at SAP Security Research, where I contributed to the development of an automated tool for mining vulnerabilities in open source software repositories. Currently, I am working on my Master's thesis, focusing on the same topic that I explored during my internship. 
 {style="text-align: justify;"}
 
-While I'm relatively new to the CTF (Capture The Flag) world, I'm enthusiastic about exploring its challenges and learning new technologies. I share my journey through the notes I take and the writeups I create, documenting my experiences and discoveries. This website proudly serves as a showcase of my achievements, including degrees, work experience, certifications, and projects.
+While I am relatively new to Capture The Flag exercises, I like delving into their challenges and learning new technologies. I share my journey through the notes I take and the writeups I create, documenting my experiences and discoveries.  
 {style="text-align: justify;"}
 
-On a lighter note, I have a fondness for monkeys and apes. Although I promise not to write code with the same quality as a monkey would, I embrace a playful and creative approach to problem-solving.
+My research interests include a wide range of topics such as, open source software, software vulnerabilities, mining repositories, software-defined networking, cybercrime. Beyond cyber security, my passion lies in wildlife conservation, with a particular focus on primates. I am particularly intrigued by the research methodologies for automated detection techniques against wildlife poaching activities. Although I promise not to write code with the same quality as a monkey would, I embrace a playful and creative approach to problem-solving.
+{style="text-align: justify;"}
+
+
+Greetings! I am a Master's Degree student in Computer Science, specializing in Cyber Security at the University of Trento. I am an inquisitive person, eager to learn new skills and always seeking new topics to explore. I recently completed an internship at SAP Security Research, where I contributed to the development of an automated tool for mining vulnerabilities in open source software repositories. Currently, I am working on my Master's thesis, focusing on the same topic that I explored during my internship.
+{style="text-align: justify;"}
+
+While I am relatively new to Capture The Flag exercises, I enjoy delving into their challenges and learning new technologies. I share my journey through the notes I take and the writeups I create, documenting my experiences and discoveries.
+{style="text-align: justify;"}
+
+My research interests include a wide range of topics such as open source software, software vulnerabilities, mining repositories, software-defined networking, and cybercrime. Beyond cybersecurity, my passion lies in wildlife conservation, with a particular focus on primates. I am particularly intrigued by research methodologies involving automated detection techniques against wildlife poaching activities. Although I promise not to write code with the same quality as a monkey would, I embrace a playful and creative approach to problem-solving.
 {style="text-align: justify;"}
