@@ -3,7 +3,7 @@ title: CTFs Writeups
 summary: list of writeups of THM and HTB boxes
 tags:
   - CTFs
-date: ""
+date: "2023-08-04"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
@@ -42,3 +42,4 @@ Welcome to my personal page dedicated to CTFs! Here, you will find a collection 
 - [OhSINT](./docs/thm/OhSINT_writeup.md)
 - [Committed](./docs/thm/committed_writeup.md)
 - [Mr. Phisher](./docs/thm/mrphisher_writeup.md)
+- [Mr. Phishe2r](mrphisher_writeup.md)

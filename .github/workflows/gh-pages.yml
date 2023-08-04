@@ -16,10 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: recursive  # Fetch any Git submodules (true OR recursive)
+          submodules: true  # Fetch any Git submodules (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-      - name: Debug Contents
-        run: ls -R content/project/ctfs
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -29,6 +27,9 @@ jobs:
 
       - name: Build
         run: hugo --minify
+
+      - name: List files in the public directory
+        run: ls -R ./public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
