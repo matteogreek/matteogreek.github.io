@@ -2,11 +2,16 @@
 title: CTFs Writeups
 summary: list of writeups of THM and HTB boxes
 tags:
-  - CTF
+  - CTFs
 #date: ''
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
+
+reading_time: false  # Show estimated reading time?
+share: false  # Show social sharing links?
+profile: false  # Show author profile?
+comments: false  # Show comments?
 
 #image:
 #  caption: Photo by rawpixel on Unsplash
@@ -32,4 +37,8 @@ external_link: ''
 Welcome to my personal page dedicated to CTFs! Here, you will find a collection of in-depth writeups for various cybersecurity challenges from both TryHackMe rooms and HackTheBox CTF boxes.
 
 ## TryHackMe
-
+- [0x41haz](./docs/thm/0x41haz_writeup.md)
+- [KAPE](./docs/thm/kape_writeup.md)
+- [OhSINT](./docs/thm/OhSINT_writeup.md)
+- [Committed](./docs/thm/committed_writeup.md)
+- [Mr. Phisher](./docs/thm/mrphisher_writeup.md)
