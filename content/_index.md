@@ -121,7 +121,12 @@ sections:
     content:
       title: Projects
       folders:
-        - project
+        - A-star
+        - autonet
+        - comnetsemu
+        - ctfs
+        - prospector
+        - sdn
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
       default_button_index: 0
       sort_ascending: false
