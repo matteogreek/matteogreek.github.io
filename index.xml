@@ -114,7 +114,15 @@ flag{a489a9dbf8eb9d37c6e0cc1a92cda17b}
 &lt;/p>
 &lt;/details>
 &lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>KAPE</title><link>https://matteogreek.github.io/writeups/thm/kape_writeup/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/kape_writeup/</guid><description>&lt;h2 id="introduction-to-kape">Introduction to KAPE&lt;/h2>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>CTFs Writeups</title><link>https://matteogreek.github.io/project/ctfs/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/ctfs/</guid><description>&lt;p>Welcome to my personal page dedicated to CTFs! Here, you will find a collection of in-depth writeups for various cybersecurity challenges from both TryHackMe rooms and HackTheBox CTF boxes.&lt;/p>
+&lt;h2 id="tryhackme">TryHackMe&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/0x41haz_writeup/">0x41haz&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/kape_writeup/">KAPE&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/ohsint_writeup/">OhSINT&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/committed_writeup/">Committed&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/mrphisher_writeup/">Mr.Phisher&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>KAPE</title><link>https://matteogreek.github.io/writeups/thm/kape_writeup/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/kape_writeup/</guid><description>&lt;h2 id="introduction-to-kape">Introduction to KAPE&lt;/h2>
 &lt;p>As reported on task 2 of the room:&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;em>Kroll Artifact Parser and Extractor&lt;/em> (KAPE) parses and extracts Windows forensics artifacts. It is a tool that can significantly reduce the time needed to respond to an incident by providing forensic artifacts from a live system or a storage device much earlier than the imaging process completes.&lt;/p>
@@ -204,7 +212,39 @@ E:
 &lt;/p>
 &lt;/details>
 &lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back to home&lt;/a>&lt;/p></description></item><item><title>OhSINT</title><link>https://matteogreek.github.io/writeups/thm/ohsint_writeup/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/ohsint_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back to home&lt;/a>&lt;/p></description></item><item><title>Mr. Phisher</title><link>https://matteogreek.github.io/writeups/thm/mrphisher_writeup/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/mrphisher_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
+&lt;p>Deploy the machine attached to the room to access the files.&lt;/p>
+&lt;h3 id="question-1">Question 1&lt;/h3>
+&lt;blockquote>
+&lt;p>Uncover the flag in the email attachment!&lt;/p>
+&lt;/blockquote>
+&lt;p>The task of the room says that the document attached to a suspicious email keeps asking to enable macros.
+We can use this information as a guide for starting the research of the flag. We can deduce that some kind of useful information is related to the document&amp;rsquo;s macros.&lt;/p>
+&lt;p>First of all let&amp;rsquo;s open the file called &lt;em>MrPhisher.docm&lt;/em> with LibreOffice. Then to see what macros are set for the document go to &lt;em>Tools &amp;gt; Macros &amp;gt; Edit Macros&lt;/em>.
+Under &lt;em>Modules&lt;/em> we can see &lt;em>NewMacro&lt;/em>, if we open it we see the macro related of MrPhisher.doc.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/70201797/180665401-31f055cb-5f80-4056-a9d9-a3e45ce1e1a9.png" alt="macro" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>We can note that it&amp;rsquo;s a macro written in Visual Basic. For simplicity we can easily convert the code to python.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/70201797/180665413-6ece7625-e923-4fdf-8515-eec88e8c4e44.png" alt="code1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>The code is straightforward, each element of the array is xor-ed with the relative index of that element. The result is casted to char to form the final output.&lt;/p>
+&lt;p>Let&amp;rsquo;s run it and see what the result is. Oh wait it&amp;rsquo;s the flag!&lt;/p>
+&lt;details>
+&lt;summary>Answer:&lt;/summary>
+&lt;p>
+flag{a39a07a239aacd40c948d852a5c9f8d1}
+&lt;/p>
+&lt;/details>
+&lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>OhSINT</title><link>https://matteogreek.github.io/writeups/thm/ohsint_writeup/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/ohsint_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
 &lt;blockquote>
 &lt;p>What information can you possible get with just one photo?&lt;/p>
 &lt;/blockquote>
@@ -295,44 +335,4 @@ pennYDr0pper.!
 &lt;/p>
 &lt;/details>
 &lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title/><link>https://matteogreek.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/admin/config.yml</guid><description/></item><item><title>AutoNet</title><link>https://matteogreek.github.io/project/autonet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/autonet/</guid><description/></item><item><title>CTFs Writeups</title><link>https://matteogreek.github.io/project/ctfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/ctfs/</guid><description>&lt;p>Welcome to my personal page dedicated to CTFs! Here, you will find a collection of in-depth writeups for various cybersecurity challenges from both TryHackMe rooms and HackTheBox CTF boxes.&lt;/p>
-&lt;h2 id="tryhackme">TryHackMe&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/0x41haz_writeup/">0x41haz&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/kape_writeup/">KAPE&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/ohsint_writeup/">OhSINT&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/committed_writeup/">Committed&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/mrphisher_writeup/">Mr.Phisher&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Mr. Phisher</title><link>https://matteogreek.github.io/writeups/thm/mrphisher_writeup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/mrphisher_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
-&lt;p>Deploy the machine attached to the room to access the files.&lt;/p>
-&lt;h3 id="question-1">Question 1&lt;/h3>
-&lt;blockquote>
-&lt;p>Uncover the flag in the email attachment!&lt;/p>
-&lt;/blockquote>
-&lt;p>The task of the room says that the document attached to a suspicious email keeps asking to enable macros.
-We can use this information as a guide for starting the research of the flag. We can deduce that some kind of useful information is related to the document&amp;rsquo;s macros.&lt;/p>
-&lt;p>First of all let&amp;rsquo;s open the file called &lt;em>MrPhisher.docm&lt;/em> with LibreOffice. Then to see what macros are set for the document go to &lt;em>Tools &amp;gt; Macros &amp;gt; Edit Macros&lt;/em>.
-Under &lt;em>Modules&lt;/em> we can see &lt;em>NewMacro&lt;/em>, if we open it we see the macro related of MrPhisher.doc.&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/70201797/180665401-31f055cb-5f80-4056-a9d9-a3e45ce1e1a9.png" alt="macro" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
-&lt;p>We can note that it&amp;rsquo;s a macro written in Visual Basic. For simplicity we can easily convert the code to python.&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/70201797/180665413-6ece7625-e923-4fdf-8515-eec88e8c4e44.png" alt="code1" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
-&lt;p>The code is straightforward, each element of the array is xor-ed with the relative index of that element. The result is casted to char to form the final output.&lt;/p>
-&lt;p>Let&amp;rsquo;s run it and see what the result is. Oh wait it&amp;rsquo;s the flag!&lt;/p>
-&lt;details>
-&lt;summary>Answer:&lt;/summary>
-&lt;p>
-flag{a39a07a239aacd40c948d852a5c9f8d1}
-&lt;/p>
-&lt;/details>
-&lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>Network measurements in ComNetsEmu</title><link>https://matteogreek.github.io/project/comnetsemu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/comnetsemu/</guid><description/></item><item><title>On Demand SDN Slices in ComNetsEmu</title><link>https://matteogreek.github.io/project/sdn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/sdn/</guid><description/></item><item><title>Parallel A-star</title><link>https://matteogreek.github.io/project/a-star/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/a-star/</guid><description/></item><item><title>Prospector</title><link>https://matteogreek.github.io/project/prospector/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/prospector/</guid><description/></item></channel></rss>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title/><link>https://matteogreek.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/admin/config.yml</guid><description/></item><item><title>AutoNet</title><link>https://matteogreek.github.io/project/autonet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/autonet/</guid><description/></item><item><title>Network measurements in ComNetsEmu</title><link>https://matteogreek.github.io/project/comnetsemu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/comnetsemu/</guid><description/></item><item><title>On Demand SDN Slices in ComNetsEmu</title><link>https://matteogreek.github.io/project/sdn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/sdn/</guid><description/></item><item><title>Parallel A-star</title><link>https://matteogreek.github.io/project/a-star/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/a-star/</guid><description/></item><item><title>Prospector</title><link>https://matteogreek.github.io/project/prospector/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/prospector/</guid><description/></item></channel></rss>
