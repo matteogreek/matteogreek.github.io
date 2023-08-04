@@ -37,8 +37,3 @@ comments: false  # Show comments?
 Welcome to my personal page dedicated to CTFs! Here, you will find a collection of in-depth writeups for various cybersecurity challenges from both TryHackMe rooms and HackTheBox CTF boxes.
 
 ## TryHackMe
-- [0x41haz]({{< relref "../../writeups/thm/0x41haz_writeup" >}})
-- [KAPE]({{< relref "../../writeups/thm/kape_writeup" >}})
-- [OhSINT]({{< relref "../../writeups/thm/OhSINT_writeup" >}})
-- [Committed]({{< relref "../../writeups/thm/committed_writeup" >}})
-- [Mr. Phisher]({{< relref "../../writeups/thm/mrphisher_writeup" >}})

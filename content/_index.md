@@ -123,24 +123,24 @@ sections:
       folders:
         - project
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-      #default_button_index: 0
+      default_button_index: 0
       #date_format: Jan 2006
       # Filter toolbar (optional).
       # Add or remove as many filters (`filter_button` instances) as you like.
       # To show all items, set `tag` to "*".
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
-      #buttons:
-      #  - name: All
-      #    tag: 'project'
-      #  - name: Networking
-      #    tag: Networking
-      #  - name: Mining repos
-      #    tag: Mining
-      #  - name: CTFs Writeups
-      #    tag: CTFs
-      #  - name: Others
-      #    tag: Others
+      buttons:
+        - name: All
+          tag: '*'
+        - name: Networking
+          tag: Networking
+        - name: Mining repos
+          tag: Mining
+        - name: CTFs Writeups
+          tag: CTFs
+        - name: Others
+          tag: Others
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2'
