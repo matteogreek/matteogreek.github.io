@@ -3,7 +3,7 @@ title: CTFs Writeups
 summary: list of writeups of THM and HTB boxes
 tags:
   - CTFs
-date: "2023-08-04"
+
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
@@ -37,9 +37,8 @@ comments: false  # Show comments?
 Welcome to my personal page dedicated to CTFs! Here, you will find a collection of in-depth writeups for various cybersecurity challenges from both TryHackMe rooms and HackTheBox CTF boxes.
 
 ## TryHackMe
-- [0x41haz](./docs/thm/0x41haz_writeup.md)
-- [KAPE](./docs/thm/kape_writeup.md)
-- [OhSINT](./docs/thm/OhSINT_writeup.md)
-- [Committed](./docs/thm/committed_writeup.md)
-- [Mr. Phisher](./docs/thm/mrphisher_writeup.md)
-- [Mr. Phishe2r](mrphisher_writeup.md)
+- [0x41haz](../../writeups/thm/0x41haz_writeup.md)
+- [KAPE](../../writeups/thm//kape_writeup.md)
+- [OhSINT](../../writeups/thm/OhSINT_writeup.md)
+- [Committed](../../writeups/thm/committed_writeup.md)
+- [Mr. Phisher](../../writeups/thm/mrphisher_writeup.md)

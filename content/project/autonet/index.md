@@ -3,7 +3,6 @@ title: AutoNet
 summary: Visual interface to pre-configure and run a network of VMs/containers and OpenVSwitches with the aim of automating the deployment of network setups
 tags:
   - Networking
-date: ""
 
 # Optional external URL for project (replaces project detail page).
 external_link: https://github.com/matteogreek/autonet
