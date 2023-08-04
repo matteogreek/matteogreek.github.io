@@ -124,6 +124,8 @@ sections:
         - project
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
       default_button_index: 0
+      sort_ascending: false
+      exclude_tags: ["writeup"]
       #date_format: Jan 2006
       # Filter toolbar (optional).
       # Add or remove as many filters (`filter_button` instances) as you like.
