@@ -3,7 +3,7 @@ title: KAPE
 summary: tool that parses and extracts Windows forensics artifacts
 tags:
   - writeup
-
+date: "2023-08-04"
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 

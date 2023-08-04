@@ -3,6 +3,7 @@ title: OhSINT
 summary: Open Source Intelligence simple task
 tags:
   - writeup
+date: "2023-08-04"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''

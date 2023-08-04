@@ -82,6 +82,7 @@ highlight_name: true
 
 Greetings! I am a Master’s Degree student in Computer Science, specializing in Cyber Security at the University of Trento. I am an inquisitive
 person, eager to learn new skills and always seeking new topics to explore. I recently completed an internship at SAP Security Research, where I contributed to the devolpment of an automated tool for mining vulnerabilities in open source software repositories. Currently, I am working on my Master's thesis, focusing on the same topic that I explored during my internship. 
+{style="text-align: justify;"}
 
 While I'm relatively new to the CTF (Capture The Flag) world, I'm enthusiastic about exploring its challenges and learning new technologies. I share my journey through the notes I take and the writeups I create, documenting my experiences and discoveries. This website proudly serves as a showcase of my achievements, including degrees, work experience, certifications, and projects.
 {style="text-align: justify;"}
