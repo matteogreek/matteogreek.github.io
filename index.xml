@@ -117,11 +117,11 @@ flag{a489a9dbf8eb9d37c6e0cc1a92cda17b}
 &lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>CTFs Writeups</title><link>https://matteogreek.github.io/project/ctfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/project/ctfs/</guid><description>&lt;p>Welcome to my personal page dedicated to CTFs! Here, you will find a collection of in-depth writeups for various cybersecurity challenges from both TryHackMe rooms and HackTheBox CTF boxes.&lt;/p>
 &lt;h2 id="tryhackme">TryHackMe&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="../../writeups/thm/0x41haz_writeup">0x41haz&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../writeups/thm//kape_writeup">KAPE&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../writeups/thm/OhSINT_writeup">OhSINT&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../writeups/thm/committed_writeup">Committed&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../writeups/thm/mrphisher_writeup">Mr. Phisher&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/0x41haz_writeup/">0x41haz&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/kape_writeup/">KAPE&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/ohsint_writeup/">OhSINT&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/committed_writeup/">Committed&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://matteogreek.github.io/writeups/thm/mrphisher_writeup/">Mr. Phisher&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>KAPE</title><link>https://matteogreek.github.io/writeups/thm/kape_writeup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/kape_writeup/</guid><description>&lt;h2 id="introduction-to-kape">Introduction to KAPE&lt;/h2>
 &lt;p>As reported on task 2 of the room:&lt;/p>
 &lt;blockquote>
