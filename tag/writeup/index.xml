@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>writeup | Matteo Greco</title><link>https://matteogreek.github.io/tag/writeup/</link><atom:link href="https://matteogreek.github.io/tag/writeup/index.xml" rel="self" type="application/rss+xml"/><description>writeup</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><image><url>https://matteogreek.github.io/media/icon_hua57a06e9c056e3196c06dde0a266966a_404_512x512_fill_lanczos_center_3.png</url><title>writeup</title><link>https://matteogreek.github.io/tag/writeup/</link></image><item><title>0x41haz</title><link>https://matteogreek.github.io/writeups/thm/0x41haz_writeup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/0x41haz_writeup/</guid><description>&lt;h3 id="task-1-find-the-password">Task 1: Find the password!&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>writeup | Matteo Greco</title><link>https://matteogreek.github.io/tag/writeup/</link><atom:link href="https://matteogreek.github.io/tag/writeup/index.xml" rel="self" type="application/rss+xml"/><description>writeup</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><image><url>https://matteogreek.github.io/media/icon_hua57a06e9c056e3196c06dde0a266966a_404_512x512_fill_lanczos_center_3.png</url><title>writeup</title><link>https://matteogreek.github.io/tag/writeup/</link></image><item><title>0x41haz</title><link>https://matteogreek.github.io/writeups/thm/0x41haz_writeup/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/0x41haz_writeup/</guid><description>&lt;h3 id="task-1-find-the-password">Task 1: Find the password!&lt;/h3>
 &lt;blockquote>
 &lt;p>In this challenge, you are asked to solve a simple reversing solution. Download and analyze the binary to discover the password.&lt;/p>
 &lt;p>There may be anti-reversing measures in place!&lt;/p>
@@ -84,7 +84,7 @@ local_12 = 0x4c; -&amp;gt; L&lt;/p>
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io" target="_blank" rel="noopener">Heartstone back to home&lt;/a>&lt;/p></description></item><item><title>Committed</title><link>https://matteogreek.github.io/writeups/thm/committed_writeup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/committed_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
+&lt;p>&lt;a href="https://matteogreek.github.io" target="_blank" rel="noopener">Heartstone back to home&lt;/a>&lt;/p></description></item><item><title>Committed</title><link>https://matteogreek.github.io/writeups/thm/committed_writeup/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/committed_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
 &lt;p>Some sensitive code was leaked and committed to a GitHub repository. The goal is to find what was committed.&lt;/p>
 &lt;h3 id="question-1">Question 1&lt;/h3>
 &lt;blockquote>
@@ -114,7 +114,7 @@ flag{a489a9dbf8eb9d37c6e0cc1a92cda17b}
 &lt;/p>
 &lt;/details>
 &lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>KAPE</title><link>https://matteogreek.github.io/writeups/thm/kape_writeup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/kape_writeup/</guid><description>&lt;h2 id="introduction-to-kape">Introduction to KAPE&lt;/h2>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>KAPE</title><link>https://matteogreek.github.io/writeups/thm/kape_writeup/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/kape_writeup/</guid><description>&lt;h2 id="introduction-to-kape">Introduction to KAPE&lt;/h2>
 &lt;p>As reported on task 2 of the room:&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;em>Kroll Artifact Parser and Extractor&lt;/em> (KAPE) parses and extracts Windows forensics artifacts. It is a tool that can significantly reduce the time needed to respond to an incident by providing forensic artifacts from a live system or a storage device much earlier than the imaging process completes.&lt;/p>
@@ -204,39 +204,7 @@ E:
 &lt;/p>
 &lt;/details>
 &lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back to home&lt;/a>&lt;/p></description></item><item><title>Mr. Phisher</title><link>https://matteogreek.github.io/writeups/thm/mrphisher_writeup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/mrphisher_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
-&lt;p>Deploy the machine attached to the room to access the files.&lt;/p>
-&lt;h3 id="question-1">Question 1&lt;/h3>
-&lt;blockquote>
-&lt;p>Uncover the flag in the email attachment!&lt;/p>
-&lt;/blockquote>
-&lt;p>The task of the room says that the document attached to a suspicious email keeps asking to enable macros.
-We can use this information as a guide for starting the research of the flag. We can deduce that some kind of useful information is related to the document&amp;rsquo;s macros.&lt;/p>
-&lt;p>First of all let&amp;rsquo;s open the file called &lt;em>MrPhisher.docm&lt;/em> with LibreOffice. Then to see what macros are set for the document go to &lt;em>Tools &amp;gt; Macros &amp;gt; Edit Macros&lt;/em>.
-Under &lt;em>Modules&lt;/em> we can see &lt;em>NewMacro&lt;/em>, if we open it we see the macro related of MrPhisher.doc.&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/70201797/180665401-31f055cb-5f80-4056-a9d9-a3e45ce1e1a9.png" alt="macro" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
-&lt;p>We can note that it&amp;rsquo;s a macro written in Visual Basic. For simplicity we can easily convert the code to python.&lt;/p>
-&lt;p>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/70201797/180665413-6ece7625-e923-4fdf-8515-eec88e8c4e44.png" alt="code1" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
-&lt;p>The code is straightforward, each element of the array is xor-ed with the relative index of that element. The result is casted to char to form the final output.&lt;/p>
-&lt;p>Let&amp;rsquo;s run it and see what the result is. Oh wait it&amp;rsquo;s the flag!&lt;/p>
-&lt;details>
-&lt;summary>Answer:&lt;/summary>
-&lt;p>
-flag{a39a07a239aacd40c948d852a5c9f8d1}
-&lt;/p>
-&lt;/details>
-&lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>OhSINT</title><link>https://matteogreek.github.io/writeups/thm/ohsint_writeup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/ohsint_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back to home&lt;/a>&lt;/p></description></item><item><title>OhSINT</title><link>https://matteogreek.github.io/writeups/thm/ohsint_writeup/</link><pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/ohsint_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
 &lt;blockquote>
 &lt;p>What information can you possible get with just one photo?&lt;/p>
 &lt;/blockquote>
@@ -324,6 +292,38 @@ New York
 &lt;summary>Answer:&lt;/summary>
 &lt;p>
 pennYDr0pper.!
+&lt;/p>
+&lt;/details>
+&lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>Mr. Phisher</title><link>https://matteogreek.github.io/writeups/thm/mrphisher_writeup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/thm/mrphisher_writeup/</guid><description>&lt;h2 id="task1">Task1&lt;/h2>
+&lt;p>Deploy the machine attached to the room to access the files.&lt;/p>
+&lt;h3 id="question-1">Question 1&lt;/h3>
+&lt;blockquote>
+&lt;p>Uncover the flag in the email attachment!&lt;/p>
+&lt;/blockquote>
+&lt;p>The task of the room says that the document attached to a suspicious email keeps asking to enable macros.
+We can use this information as a guide for starting the research of the flag. We can deduce that some kind of useful information is related to the document&amp;rsquo;s macros.&lt;/p>
+&lt;p>First of all let&amp;rsquo;s open the file called &lt;em>MrPhisher.docm&lt;/em> with LibreOffice. Then to see what macros are set for the document go to &lt;em>Tools &amp;gt; Macros &amp;gt; Edit Macros&lt;/em>.
+Under &lt;em>Modules&lt;/em> we can see &lt;em>NewMacro&lt;/em>, if we open it we see the macro related of MrPhisher.doc.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/70201797/180665401-31f055cb-5f80-4056-a9d9-a3e45ce1e1a9.png" alt="macro" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>We can note that it&amp;rsquo;s a macro written in Visual Basic. For simplicity we can easily convert the code to python.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://user-images.githubusercontent.com/70201797/180665413-6ece7625-e923-4fdf-8515-eec88e8c4e44.png" alt="code1" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>The code is straightforward, each element of the array is xor-ed with the relative index of that element. The result is casted to char to form the final output.&lt;/p>
+&lt;p>Let&amp;rsquo;s run it and see what the result is. Oh wait it&amp;rsquo;s the flag!&lt;/p>
+&lt;details>
+&lt;summary>Answer:&lt;/summary>
+&lt;p>
+flag{a39a07a239aacd40c948d852a5c9f8d1}
 &lt;/p>
 &lt;/details>
 &lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
