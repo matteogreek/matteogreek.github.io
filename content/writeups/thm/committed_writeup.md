@@ -3,7 +3,7 @@ title: Committed
 summary: sensitive information in public repository
 tags:
   - CTF
-#date: ''
+date: ''
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''

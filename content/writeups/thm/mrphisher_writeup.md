@@ -3,7 +3,7 @@ title: Mr. Phisher
 summary: Phishing email containing suspicious attachment
 tags:
   - CTF
-#date: ''
+date: ''
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
