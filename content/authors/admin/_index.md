@@ -38,7 +38,7 @@ education:
       year: 2023
     - course: B.Sc Information Engineering - Business Organization
       institution: University of Trento
-      year: 2022
+      year: 2021
     - course: High School Diploma in Computer Science
       institution: ITT G. Chilesotti
       year: 2018
@@ -83,7 +83,7 @@ highlight_name: true
 Greetings! I am a Master's Degree student in Computer Science, specializing in Cyber Security at the University of Trento. I am an inquisitive person, eager to learn new skills and always seeking new topics to explore. I recently completed an internship at SAP Security Research, where I contributed to the development of an automated tool for mining vulnerabilities in open source software repositories. Currently, I am working on my Master's thesis, focusing on the same topic that I explored during my internship.
 {style="text-align: justify;"}
 
-While I am relatively new to Capture The Flag exercises, I enjoy delving into their challenges and learning new technologies. I share my journey through the notes I take and the writeups I create, documenting my experiences and discoveries.
+While I am relatively new to Capture The Flag exercises, I enjoy delving into their challenges and learning new technologies. In addition to these, I've also started doing some SOC exercises to further enhance my skill set. I share my journey through the notes I take and the writeups I create, documenting my experiences and discoveries.
 {style="text-align: justify;"}
 
 My research interests include a wide range of topics such as open source software, software vulnerabilities, mining repositories, software-defined networking, and cybercrime. Beyond cybersecurity, my passion lies in wildlife conservation, with a particular focus on primates. I am particularly intrigued by research methodologies involving automated detection techniques against wildlife poaching activities. Although I promise not to write code with the same quality as a monkey would, I embrace a playful and creative approach to problem-solving.
