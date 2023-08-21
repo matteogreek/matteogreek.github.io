@@ -327,7 +327,7 @@ pennYDr0pper.!
 &lt;/p>
 &lt;/details>
 &lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title/><link>https://matteogreek.github.io/writeups/letsdefend/soc147-ssh-scan-activity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/letsdefend/soc147-ssh-scan-activity/</guid><description>&lt;h1 id="alert">Alert&lt;/h1>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title/><link>https://matteogreek.github.io/writeups/letsdefend/soc147/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/letsdefend/soc147/</guid><description>&lt;h1 id="alert">Alert&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">EventID : 94
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Event Time : Jun, 13, 2021, 04:23 PM
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Rule : SOC147 - SSH Scan Activity
@@ -358,7 +358,7 @@ IP Address: 172.16.20.5&lt;/p>
 &lt;p>The email from the penetration testing team indicated their intention to conduct a network scan after 12 PM. By examining the terminal history of the Pentest machine, we can observe the use of the nmap command to scan a range of IP addresses.&lt;/p>
 &lt;h1 id="conclusion">Conclusion&lt;/h1>
 &lt;p>The alert is a false positive.&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title/><link>https://matteogreek.github.io/writeups/letsdefend/soc163-suspicious-certutil.exe-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/letsdefend/soc163-suspicious-certutil.exe-usage/</guid><description>&lt;h1 id="summary">Summary&lt;/h1>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title/><link>https://matteogreek.github.io/writeups/letsdefend/soc163/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/letsdefend/soc163/</guid><description>&lt;h1 id="summary">Summary&lt;/h1>
 &lt;p>In this alert we investigate a suspicious usage of a Windows binary called &lt;strong>certutil.exe&lt;/strong>. The main focus of this exercise was to learn about LolBins (Living-off-the-land binaries).&lt;/p>
 &lt;blockquote>
 &lt;p>A Living-off-the-land binaries is any binary supplied by the operating system that is normally used for legitimate purposes but can also be abused by malicious actors. Several default system binaries have unexpected side effects, which may allow attackers to hide their activities post-exploitation.&lt;/p>
@@ -462,7 +462,7 @@ IP Address: 172.16.20.5&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ nmap -sV 192.168.0.0/24 -p 80
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="conclusion">Conclusion&lt;/h1>
 &lt;p>The alert was a true positive. The purpose of suspicious activities performed with legal binaries for this incident was to download the tool called nmap. No malware was detected on the machine so we can assume it has been the user of the system who run the terminal commands.&lt;/p>
-&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title/><link>https://matteogreek.github.io/writeups/letsdefend/soc202-fakegpt-malicious-chrome-extension/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/letsdefend/soc202-fakegpt-malicious-chrome-extension/</guid><description>&lt;h1 id="summary">Summary&lt;/h1>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title/><link>https://matteogreek.github.io/writeups/letsdefend/soc202/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/letsdefend/soc202/</guid><description>&lt;h1 id="summary">Summary&lt;/h1>
 &lt;p>This exercise is about a suspicious Chrome extension named &amp;ldquo;ChatGPT for Google. The alert was triggered due to the suspicious addition of the extension to the browser, indicating a potential security threat. The add-on, disguising as a ChatGPT tool, targeted users&amp;rsquo; Facebook profiles. Despite its removal from the Chrome Web Store, many had already installed it, posing concerns about data privacy. Subsequent checks of network activity showed links to harmful websites related to the extension&amp;rsquo;s C2 framework. These links, combined with data from threat intelligence sources, verified the extension&amp;rsquo;s malevolent intent and the significant danger it presented to users.&lt;/p>
 &lt;h1 id="alert">Alert&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Severity: High
