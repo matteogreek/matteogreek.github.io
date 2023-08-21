@@ -37,7 +37,7 @@ comments: false  # Show comments?
 Welcome to my personal page dedicated to SOC Analyst exercises! Here, you will find a collection of in-depth writeups for various challenges from both LetsDefend and CyberDefenders.
 
 ## LetsDefend
-- [SOC147 - SSH Scan Activity](../../writeups/letsdefend/SOC147%20-%20SSH%20Scan%20Activity)
-- [SOC163 - Suspicious Certutil.exe Usage](../../writeups/letsdefend/SOC163%20-%20Suspicious%20Certutil.exe%20Usage)
-- [SOC202 - FakeGPT Malicious Chrome Extension](../../writeups/letsdefend/SOC202%20-%20FakeGPT%20Malicious%20Chrome%20Extension)
+- [SOC147 - SSH Scan Activity]({{< relref "../../writeups/letsdefend/SOC147" >}})
+- [SOC163 - Suspicious Certutil.exe Usage]({{< relref "../../writeups/letsdefend/SOC163" >}})
+- [SOC202 - FakeGPT Malicious Chrome Extension]({{< relref "../../writeups/letsdefend/SOC202" >}})
 
