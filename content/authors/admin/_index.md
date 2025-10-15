@@ -14,21 +14,21 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: MSc student in Cyber Security
+role: Security Engineer
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: University of Trento
-    url: https://www.unitn.it/en
+  - name: Be Innova
+    url: https://be-innova.eu
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
 
 # Interests to show in About widget
-interests:
-  - Software Vulnerabilities 
-  - Software-defined networking
-  - Mining repositories
+Interests:
+  - CTF Challenges
+  - Learning 中文
+  - Adventure Gaming
 
 # Education to show in About widget
 education:
@@ -39,9 +39,6 @@ education:
     - course: B.Sc Information Engineering - Business Organization
       institution: University of Trento
       year: 2021
-    - course: High School Diploma in Computer Science
-      institution: ITT G. Chilesotti
-      year: 2018
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -80,11 +77,10 @@ email: ''
 highlight_name: true
 ---
 
-Greetings! I am a Master's Degree student in Computer Science, specializing in Cyber Security at the University of Trento. I am an inquisitive person, eager to learn new skills and always seeking new topics to explore. I recently completed an internship at SAP Security Research, where I contributed to the development of an automated tool for mining vulnerabilities in open source software repositories. Currently, I am working on my Master's thesis, focusing on the same topic that I explored during my internship.
+Hey! I’m a Security Engineer with experience in both Red and Blue Team operations. I optimize real-time threat detection through SIEM/XDR management leveraging threat intelligence to performing hands-on incident response and forensic analysis. When a breach occurs, I investigate compromises, reconstruct kill chains, and apply those insights to continuously refine detection and mitigation strategies.
 {style="text-align: justify;"}
 
-While I am relatively new to Capture The Flag exercises, I enjoy delving into their challenges and learning new technologies. In addition to these, I've also started doing some SOC exercises to further enhance my skill set. I share my journey through the notes I take and the writeups I create, documenting my experiences and discoveries.
-{style="text-align: justify;"}
+As a Red Team specialist, I challenge security defenses by emulating real-world adversaries and conducting targeted penetration tests. By thinking like a threat actor, I uncover vulnerabilities before they can be exploited, providing organizations with actionable insights to strengthen their security posture. Beyond this hands-on technical work, I am passionate about sharing knowledge and frequently deliver cybersecurity trainings to raise security awareness.
 
-My research interests include a wide range of topics such as open source software, software vulnerabilities, mining repositories, software-defined networking, and cybercrime. Beyond cybersecurity, my passion lies in wildlife conservation, with a particular focus on primates. I am particularly intrigued by research methodologies involving automated detection techniques against wildlife poaching activities. Although I promise not to write code with the same quality as a monkey would, I embrace a playful and creative approach to problem-solving.
+I hold a Master’s in Computer Science with a Cyber Security specialization from the University of Trento. While working at SAP, I contributed to the development of tools for automated vulnerability mining, combining academic knowledge with practical innovation.
 {style="text-align: justify;"}

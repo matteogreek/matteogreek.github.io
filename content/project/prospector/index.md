@@ -3,7 +3,7 @@ title: Prospector
 summary: Tool to find security fixes for known vulnerabilities in open source software repositories
 tags:
   - Mining
-#date: ''
+date: ''
 
 # Optional external URL for project (replaces project detail page).
 external_link: 'https://github.com/sap/project-kb'

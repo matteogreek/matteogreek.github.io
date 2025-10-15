@@ -1,21 +1,22 @@
 ---
 title: Mr. Phisher
 summary: Phishing email containing suspicious attachment
-tags:
-  - writeup
-date: "2023-08-04"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
-
+#date: ''
 reading_time: false  # Show estimated reading time?
 share: false  # Show social sharing links?
 profile: false  # Show author profile?
 comments: false  # Show comments?
+
 ---
 ## Task1
-Deploy the machine attached to the room to access the files. 
+
+Deploy the machine attached to the room to access the files.
+
 ### Question 1
+>
 > Uncover the flag in the email attachment!
 
 The task of the room says that the document attached to a suspicious email keeps asking to enable macros.
@@ -30,18 +31,17 @@ We can note that it's a macro written in Visual Basic. For simplicity we can eas
 
 ![code1](https://user-images.githubusercontent.com/70201797/180665413-6ece7625-e923-4fdf-8515-eec88e8c4e44.png)
 
-The code is straightforward, each element of the array is xor-ed with the relative index of that element. The result is casted to char to form the final output. 
+The code is straightforward, each element of the array is xor-ed with the relative index of that element. The result is casted to char to form the final output.
 
 Let's run it and see what the result is. Oh wait it's the flag!
 
 <details>
   <summary>Answer:</summary>
   <p>
-	flag{a39a07a239aacd40c948d852a5c9f8d1}
+ flag{a39a07a239aacd40c948d852a5c9f8d1}
   </p>
 </details>
 
-
 **Hurray!**
 
-[Heartstone back home](https://matteogreek.github.io/)
+<a href="https://matteogreek.github.io/" target="_self">Heartstone back home</a>

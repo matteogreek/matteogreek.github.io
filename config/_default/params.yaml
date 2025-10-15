@@ -20,8 +20,9 @@ appearance:
 #    org_name: ''
 #    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
 #    twitter: 'wowchemy'
-#  analytics:
-#    google_analytics: ''
+#analytics:
+#  google:
+#    id: ''
 #    baidu_tongji: ''
 #    google_tag_manager: ''
 #    microsoft_clarity: ''  
@@ -70,7 +71,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/matteogreek/matteogreek.githhub.io'
+    url: 'https://github.com/matteogreek/matteogreek.github.io'
     content_dir: content
     branch: main
   avatar:

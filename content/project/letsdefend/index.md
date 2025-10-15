@@ -3,8 +3,7 @@ title: SOC Writeups
 summary: list of writeups of LetsDefend and CyberDefenders challenges
 tags:
   - Writeups
-date: "2023-08-21"
-
+date: ''
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 
@@ -37,7 +36,7 @@ comments: false  # Show comments?
 Welcome to my personal page dedicated to SOC Analyst exercises! Here, you will find a collection of in-depth writeups for various challenges from both LetsDefend and CyberDefenders.
 
 ## LetsDefend
-- [SOC147 - SSH Scan Activity]({{< relref "../../writeups/letsdefend/SOC147" >}})
-- [SOC163 - Suspicious Certutil.exe Usage]({{< relref "../../writeups/letsdefend/SOC163" >}})
-- [SOC202 - FakeGPT Malicious Chrome Extension]({{< relref "../../writeups/letsdefend/SOC202" >}})
 
+- [SOC147 - SSH Scan Activity]({{< relref "../../_writeups/letsdefend/SOC147" >}})
+- [SOC163 - Suspicious Certutil.exe Usage]({{< relref "../../_writeups/letsdefend/SOC163" >}})
+- [SOC202 - FakeGPT Malicious Chrome Extension]({{< relref "../../_writeups/letsdefend/SOC202" >}})

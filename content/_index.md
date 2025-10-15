@@ -71,6 +71,14 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Security Engineer
+          company: Be Innova
+          company_url: 'https://www.be-innova.eu/'
+          company_logo: B
+          location: Trento, Italy
+          date_start: '2023-11-20'
+          date_end: ''
+          #description: Automated Mining of Vulnerabilities - Software Repositories
         - title: Security Research Intern
           company: SAP
           company_url: 'https://www.sap.com/'
@@ -78,7 +86,7 @@ sections:
           location: SAP Labs France - Mougins, Provence-Alpes-Côte d'Azur, France
           date_start: '2023-02-20'
           date_end: '2023-07-28'
-          description: Automated Mining of Vulnerabilities - Software Repositories
+          #description: Automated Mining of Vulnerabilities - Software Repositories
         - title: Erasmus+ Internship
           company: Białystok Science and Technology Park
           company_url: 'https://bpnt.bialystok.pl/en/'
@@ -86,7 +94,7 @@ sections:
           location: Białystok, Poland
           date_start: '2017-05-20'
           date_end: '2017-07-28'
-          description: 
+          #description: 
     design:
       columns: '2'
   #- block: collection
@@ -125,21 +133,19 @@ sections:
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
       default_button_index: 0
       sort_ascending: false
-      #date_format: Jan 2006
+      date_format: Jan 2006
       # Filter toolbar (optional).
       # Add or remove as many filters (`filter_button` instances) as you like.
       # To show all items, set `tag` to "*".
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
       buttons:
-        - name: Networking
-          tag: Networking
-        - name: Mining repos
-          tag: Mining
         - name: Writeups
           tag: Writeups
-        - name: Others
-          tag: Others
+        - name: Mining
+          tag: Mining
+
+
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2'
@@ -159,7 +165,23 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://github.com/matteogreek/certificates/blob/main/SCWDevlympicsCompetitorMedal.png
+        - certificate_url: https://github.com/matteogreek/certs/blob/main/CTF_sherlock_cert.pdf
+          date_end: ''
+          date_start: '2025-09-26'
+          description: ''
+          organization: Hack The Box
+          organization_url: https://www.hackthebox.com/
+          title: Holmes CTF 2025  
+          url: ''
+        - certificate_url: https://github.com/matteogreek/certs/blob/main/Bitdefender_Certified_Technical_Specialist.pdf
+          date_end: ''
+          date_start: '2024-12-12'
+          description: ''
+          organization: Bitdefender
+          organization_url: https://www.bitdefender.com/
+          title: Bitdefender Certified Technical Specialist
+          url: ''
+        - certificate_url: https://github.com/matteogreek/certs/blob/main/SCWDevlympicsCompetitorMedal.png
           date_end: ''
           date_start: '2021-10-01'
           description: ''
@@ -167,7 +189,7 @@ sections:
           organization_url: https://www.securecodewarrior.com/
           title: Devlympics 2021 Competitor
           url: ''
-        - certificate_url: https://github.com/matteogreek/certificates/blob/main/Flagship2_certificate.pdf
+        - certificate_url: https://github.com/matteogreek/certs/blob/main/Flagship2_certificate.pdf
           date_end: ''
           date_start: '2022-01-25'
           description: ''
@@ -226,15 +248,15 @@ sections:
   #    title: Popular Topics
   #  design:
   #    columns: '2'
-  - block: contact
-    id: contact
-    content:
-      title: Contact
-      subtitle:
+  #  - block: contact
+  #    id: contact
+  #    content:
+  #      title: Contact
+  #      subtitle:
       #text: |-
       #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: matgrec@gmail.com
+  #      email: matgrec@gmail.com
   #    phone: 888 888 88 88
   #    appointment_url: 'https://calendly.com'
   #    address:

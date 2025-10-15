@@ -1,25 +1,24 @@
 ---
 title: Committed
 summary: sensitive information in public repository
-tags:
-  - writeup
-date: "2023-08-04"
 # Optional external URL for project (replaces project detail page).
 external_link: ''
-
+date: ''
 reading_time: false  # Show estimated reading time?
 share: false  # Show social sharing links?
 profile: false  # Show author profile?
 comments: false  # Show comments?
+
 ---
 ## Task1
 
 Some sensitive code was leaked and committed to a GitHub repository. The goal is to find what was committed.
 
 ### Question 1
+>
 > Discover the flag in the repository!
 
-Start by deploying the machine attached to the room to access the the files we need. Inside the machine we find *committed.zip*. 
+Start by deploying the machine attached to the room to access the the files we need. Inside the machine we find *committed.zip*.
 
 We know that we need to find some leaked information on some accidental commit. To know all the past commit to a git repository we can type:
 
@@ -38,12 +37,10 @@ where \<hash\> is the hash of the commit that we want to show. It's easy now to 
 <details>
   <summary>Answer:</summary>
   <p>
-	flag{a489a9dbf8eb9d37c6e0cc1a92cda17b}
+ flag{a489a9dbf8eb9d37c6e0cc1a92cda17b}
   </p>
 </details>
 
-
-
 **Hurray!**
 
-[Heartstone back home](https://matteogreek.github.io/)
+<a href="https://matteogreek.github.io/" target="_self">Heartstone back home</a>
