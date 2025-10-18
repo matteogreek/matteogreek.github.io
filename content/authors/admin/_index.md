@@ -81,6 +81,7 @@ Hey! I’m a Security Engineer with experience in both Red and Blue Team operati
 {style="text-align: justify;"}
 
 As a Red Team specialist, I challenge security defenses by emulating real-world adversaries and conducting targeted penetration tests. By thinking like a threat actor, I uncover vulnerabilities before they can be exploited, providing organizations with actionable insights to strengthen their security posture. Beyond this hands-on technical work, I am passionate about sharing knowledge and frequently deliver cybersecurity trainings to raise security awareness.
+{style="text-align: justify;"}
 
 I hold a Master’s in Computer Science with a Cyber Security specialization from the University of Trento. While working at SAP, I contributed to the development of tools for automated vulnerability mining, combining academic knowledge with practical innovation.
 {style="text-align: justify;"}
